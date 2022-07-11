@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?
+	family=Kaushan+Script|Montserrat:400,7008amp;subset=cyrillic-ext"
+	rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<title>Главная страница</title>
+</head>
+<body>
+
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__logo">Профквалификация</div>
+			
+			<nav class="nav">
+				<a class="nav__link" href="about.html">Информация о нас</a>
+				<a class="nav__link" href="#index.html#t4">Мы на карте</a>
+				<a class="nav__link" href="#t2">Контакты</a>
+			</nav>
+		</div>
+	</div>
+</header>
+
+<div class="intro">
+	<div class="container">
+		<div class="intro__inner">
+			<h2 class="intro__suptitle"></h2>
+			<h2 class="intro__title " data-aos="fade-in">Поможем с обучением</h2>
+		
+		
+			<a class="btn" href="#form" onclick="show('block')">Оставить заяку</a>
+			
+			<div onclick="show('none')" class="gray" id="gray"></div>
+			
+			<div id="window">
+				<img class="close"  alt="" onclick="show('none')">
+				<div class="form">
+					<h2 class="section__title" id="ыфв" data-aos="fade-in">Заполнение заявки</h2>
+					<form action="index.html" name="f1">
+						<input type="text" placeholder="Фамилия" name="name1" class="input">
+						<input type="text" placeholder="Имя" name="name2" class="input">
+						<input type="text" placeholder="Отчество" name="name3" class="input">
+						<input type="text" placeholder="Почта" name="mail" class="input">
+						<input type="text" placeholder="Мобильный телефон" name="phone" class="input">
+						<input type="submit" value="Отправить" name="sab" class="input">
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+
+
+<section class="section">
+	<div class="container">
+		
+		<div class="section__header">
+			<h2 class="section__title" id="t1" data-aos="fade-in">Информация о нас</h2>
+			<div class="section__text">
+				<p>Профквалификация - предприятие, занимающееся профессиональной квалификацией рабочих лиц. В наши обязанности входит: подробное и понятное обучение вашей будующей профессии, выдача сооответствующих документов, продление лицензий и многое другое.  </p>
+			</div>
+			<h2 class="section__title"  data-aos="fade-in">Программы обучения</h2>
+			<div class="grid">
+				<a class="btn" href="prof.html">Профессиональное обучение</a>
+				<a class="btn" href="#form">Дополнительное образование</a>
+				<a class="btn" href="#form">Дополнительное проф. образование</a>
+				<a class="btn" href="#form">Предаттестационная подготовка</a>
+			</div>
+			
+			<h2 class="section__title" id="t4" data-aos="fade-in">Мы на карте</h2>
+			<div class="map">
+				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d284.7177301541489!2d39.70043615102257!3d47.24188067998324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b851545fd8b9%3A0x1dc805c09ceb33a3!2z0YPQuy4g0KTRgNGD0L3Qt9C1LCAz0LAsINCg0L7RgdGC0L7Qsi3QvdCwLdCU0L7QvdGDLCDQoNC-0YHRgtC-0LLRgdC60LDRjyDQvtCx0LsuLCAzNDQwMTI!5e0!3m2!1sru!2sru!4v1656501782979!5m2!1sru!2sru" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+		
+		
+	</div>
+</section>
+
+<div class="statistics">
+	<div class="container">
+		<div class="stat">
+			<div class="stat__item">
+			<div class="stat__count">7826</div>
+			<div class="stat__text">Костюмов продано</div>
+			</div>
+
+			<div class="stat__item">
+				<div class="stat__count">3410</div>
+				<div class="stat__text">Клиентов остались довольными</div>
+			</div>
+			
+			<div class="stat__item">
+				<div class="stat__count">210</div>
+				<div class="stat__text">Мастеров трудятся</div>
+			</div>
+			
+			<div class="stat__item">
+				<div class="stat__count">162</div>
+				<div class="stat__text">Года успешной работы</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<section class="section">
+	<div class="container">
+		<div class="section__header">
+			<h2 class="section__title" id="t2" data-aos="fade-in">Контакты</h2>
+			<p>e-mail: kovyazov2014@gmail.com</p>
+			<p>Мобильный телефон: +7 (918) 474-26-16</p>
+
+		</div>
+	</div>
+</section>>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+	function show(state){
+	document.getElementById('window').style.display = state;
+	document.getElementById('gray').style.display = state;
+	}
+</script>
+
+</body>
+</html>
